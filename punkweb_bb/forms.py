@@ -46,7 +46,7 @@ class FilterUsersForm(forms.Form):
             ("date_joined", "Date Joined (Oldest)"),
             ("-date_joined", "Date Joined (Newest)"),
         ),
-        widget=forms.Select(attrs={"class": "pw-input"}),
+        widget=forms.Select(attrs={"class": "pw-input", "style": "color: var(--oc-discord-fg)"}),
     )
 
 

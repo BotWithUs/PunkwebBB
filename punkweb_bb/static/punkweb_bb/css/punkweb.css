@@ -1,10 +1,11 @@
 body {
-  background-color: white;
-  color: var(--oc-gray-9);
+  background-color: var(--oc-discord-true);
+  color: var(--oc-discord-fg);
 }
 
 a {
-  color: var(--primary-9);
+  color: var(--oc-discord-purple);
+  filter: brightness(180%);
 }
 
 hr {
@@ -58,7 +59,7 @@ hr {
 }
 
 .nav__main {
-  background-color: var(--primary-9);
+  background-color: var(--oc-discord-purple);
   box-shadow: 0 0.25rem 0.5rem rgba(0, 0, 0, 0.25);
   color: var(--oc-gray-0);
 }
@@ -93,7 +94,7 @@ hr {
 /** Footer **/
 
 .footer {
-  background-color: var(--oc-gray-9);
+  background-color: var(--oc-discord-darker);
   color: white;
   font-size: 0.875rem;
   padding: 0.5rem 0;
@@ -123,9 +124,8 @@ hr {
 }
 
 .pw-table thead tr th {
-  background-color: var(--oc-gray-1);
-  border-bottom: 1px solid var(--oc-gray-4);
-  color: var(--oc-gray-7);
+  background-color: var(--oc-discord-darkest);
+  color: var(--discord-fg);
   font-size: 0.875rem;
   font-weight: 700;
   padding: 0.75rem 1rem;

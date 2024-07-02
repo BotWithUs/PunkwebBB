@@ -20,7 +20,7 @@
 
 .thread__user {
   align-items: center;
-  border-right: 1px solid var(--oc-gray-4);
+  border-right: 1px solid var(--oc-discord-true);
   display: flex;
   flex: 0 0 16rem;
   flex-direction: column;
@@ -47,8 +47,8 @@
 }
 
 .thread__user__details {
-  background-color: var(--oc-gray-0);
-  border: 1px solid var(--oc-gray-4);
+  background-color: var(--oc-discord-true);
+  border: 1px solid var(--oc-discord-darkest);
   border-radius: 0.25rem;
   display: flex;
   flex-direction: column;

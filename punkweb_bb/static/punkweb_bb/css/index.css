@@ -63,7 +63,8 @@
 }
 
 .index__statistics__label {
-  color: var(--oc-gray-7);
+  color: var(--oc-discord-fg);
+  font-weight: 600;
 }
 
 .subcategory__latestThread {

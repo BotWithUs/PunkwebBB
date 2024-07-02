@@ -107,8 +107,8 @@
               •
               <time datetime="{{thread.created_at|date:'c'}}">{{thread.created_at | date:'M j, Y'}}</time>
           </td>
-          <td>{{thread.post_count}}</td>
-          <td>{{thread.view_count | humanize_int}}</td>
+          <td style="padding-left: 1.85rem">{{thread.post_count}}</td>
+          <td style="padding-left: 1.85rem">{{thread.view_count | humanize_int}}</td>
           <td>
             {% if thread.latest_post %}
             <div class="thread__latestPost">

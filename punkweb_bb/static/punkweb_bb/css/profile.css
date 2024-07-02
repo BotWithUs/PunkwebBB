@@ -23,7 +23,7 @@
 }
 
 .profile__info__stat__value {
-  color: var(--oc-gray-9);
+  color: var(--oc-discord-fg);
 }
 
 .profile__thread__list {

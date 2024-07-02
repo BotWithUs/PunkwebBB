@@ -31,7 +31,7 @@
               <col span="1" width="320px">
             </colgroup>
             <thead>
-              <tr>
+              <tr class="pw-category-header">
                 <th>
                   <div class="index__category__title">
                     <a href="{{category.get_absolute_url}}">{{category.name}}</a>
@@ -79,8 +79,8 @@
                     {{subcategory.description|render}}
                   </div>
                 </td>
-                <td>{{subcategory.thread_count}}</td>
-                <td>{{subcategory.post_count}}</td>
+                <td style="padding-left: 2.5rem">{{subcategory.thread_count}}</td>
+                <td style="padding-left: 1.8rem">{{subcategory.post_count}}</td>
                 <td>
                   {% if subcategory.latest_thread %}
                   {% if subcategory.latest_thread.latest_post %}
