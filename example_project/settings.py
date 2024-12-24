@@ -137,4 +137,5 @@ LOGIN_URL = "punkweb_bb:login"
 
 PUNKWEB_BB = {
     "PARSER": "bbcode",
+    "ROUNDED_AVATARS": False,
 }

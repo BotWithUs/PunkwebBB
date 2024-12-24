@@ -644,16 +644,9 @@ class ThreadModelForm(forms.ModelForm):
 
 def search_view(request):
     query = request.GET.get("q", "")
-
-    print(query)
-
     matching_threads = search_threads(query)
-
-    print(matching_threads)
-
     context = {
         "query": query,
         "threads": matching_threads,
     }
-
     return render(request, "punkweb_bb/search.html", context=context)

@@ -20,11 +20,21 @@ def profile_image_upload_to(instance, filename):
     return f"punkweb_bb/board_profiles/{instance.user.username}/image{ext}"
 
 
+class Badge(UUIDPrimaryKeyMixin, TimestampMixin):
+    name = models.CharField(max_length=255)
+    description = models.TextField()
+    image = models.ImageField(upload_to="punkweb_bb/badges/")
+
+    def __str__(self):
+        return self.name
+
+
 class BoardProfile(UUIDPrimaryKeyMixin, TimestampMixin):
     user = models.OneToOneField(User, related_name="profile", on_delete=models.CASCADE)
     image = models.ImageField(upload_to=profile_image_upload_to, blank=True, null=True)
     bio = models.TextField(max_length=1024, blank=True)
     signature = models.TextField(max_length=1024, blank=True)
+    badges = models.ManyToManyField(Badge, blank=True, null=True)
 
     class Meta:
         ordering = ("user__username",)

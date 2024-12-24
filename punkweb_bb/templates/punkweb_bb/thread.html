@@ -76,6 +76,14 @@
           <div class="thread__user__details__label">Posts:</div>
           <div class="thread__user__details__value">{{thread.user.profile.post_count}}</div>
         </div>
+        <div class="thread__user__details__row">
+          <!-- <div class="thread__user__details__label">Badges:</div> -->
+          <div class="thread__user__details__value">
+            {% for badge in thread.user.profile.badges.all %}
+            <img class="thread__user__details__badge" src="{{badge.image.url}}" alt="{{badge.name}} - {{badge.description}}" />
+            {% endfor %}
+          </div>
+        </div>
       </div>
     </div>
     <div class="thread__main">

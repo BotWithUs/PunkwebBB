@@ -9,6 +9,7 @@ from punkweb_bb.admin_forms import (
     ThreadAdminModelForm,
 )
 from punkweb_bb.models import (
+    Badge,
     BoardProfile,
     Category,
     GroupStyle,
@@ -131,3 +132,9 @@ class GroupStyleModelAdmin(admin.ModelAdmin):
         "group__name",
         "username_style",
     )
+
+
+@admin.register(Badge)
+class BadgeModelAdmin(admin.ModelAdmin):
+    list_display = ("name",)
+    search_fields = ("name",)
