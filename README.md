@@ -1,5 +1,8 @@
 # PunkwebBB
 
+> [!NOTE]  
+> This is a fork of [PunkwebBB](https://github.com/punkweb/punkweb-bb). There is no commitment to maintain feature parity.
+
 PunkwebBB is a Django application that provides a simple forum board software for your Django website.
 
 One of the main goals of this project is to be as simple as possible to install, and not depend on any other Django apps.  I want users of this package to be able to install a fully working forum board in under a minute, and then be able to configure it further from there.
