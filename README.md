@@ -1,7 +1,7 @@
 # PunkwebBB
 
 > [!NOTE]  
-> This is a fork of [PunkwebBB](https://github.com/punkweb/punkweb-bb). There is no commitment to maintain feature parity.
+> This is a fork of [PunkwebBB](https://github.com/punkweb/punkwebbb). There is no commitment to maintain feature parity.
 
 PunkwebBB is a Django application that provides a simple forum board software for your Django website.
 
