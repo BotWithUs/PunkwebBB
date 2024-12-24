@@ -9,7 +9,7 @@ class BBCodeEditorWidget(forms.Textarea):
     class Media:
         css = {
             "all": (
-                "/static/punkweb_bb/vendor/sceditor-3.2.0/minified/themes/square.min.css",
+                "/static/punkweb_bb/vendor/sceditor-3.2.0/minified/themes/defaultdark.min.css",
             )
         }
         js = (

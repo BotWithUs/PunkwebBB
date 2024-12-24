@@ -158,3 +158,11 @@ hr {
 pre[class*="language-"] {
   font-size: 0.75rem;
 }
+
+.sceditor-container {
+  background-color: var(--oc-gray-9);
+}
+
+iframe {
+  margin: 0 !important;
+}
